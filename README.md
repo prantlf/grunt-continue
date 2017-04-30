@@ -96,7 +96,7 @@ module.exports = function(grunt) {
     // Tasks, which should succeed preparing output for unit test checks
     'move:rename',
     ...
-    // Prefent Grunt from failing, if a task fails from know on
+    // Prevent Grunt from failing, if a task fails from know on
     'continue:on',
     // Tasks, which should intentionally fail
     'move:failed_wrong_path',
