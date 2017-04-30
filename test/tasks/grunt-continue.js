@@ -122,4 +122,60 @@ describe('grunt-continue', function() {
     });
   });
 
+  it('should be able to clear warnings before another continue block is entered', function(done){
+    execScenario('clearWarnings', false, function(error, stdout, stderr) {
+      expect(stdout).to.match(/second/);
+      expect(stdout).to.not.match(/Aborted due to warnings./);
+      done();
+    });
+  });
+
+  it('should pass if we expect any warnings to be issued within a continue block', function(done){
+    execScenario('passIfAnyWarningsWereIssued', false, function(error, stdout, stderr) {
+      expect(stdout).to.match(/second/);
+      expect(stdout).to.not.match(/Aborted due to warnings./);
+      done();
+    });
+  });
+
+  it('should fail if we expect any warnings to be issued within a continue block - and none were', function(done){
+    execScenario('failIfNoWarningsWereIssued', false, function(error, stdout, stderr) {
+      expect(stdout).to.match(/first/);
+      expect(stdout).to.match(/Aborted due to warnings./);
+      done();
+    });
+  });
+
+  it('should fail if no expected warnings were specified', function(done){
+    execScenario('missingExpectedWarnings', false, function(error, stdout, stderr) {
+      expect(stdout).to.match(/second/);
+      expect(stdout).to.match(/Aborted due to warnings./);
+      done();
+    });
+  });
+
+  it('should pass if we expect concrete warnings to be issued within a continue block', function(done){
+    execScenario('passIfConcreteWarningsWereIssued', false, function(error, stdout, stderr) {
+      expect(stdout).to.match(/second/);
+      expect(stdout).to.not.match(/Aborted due to warnings./);
+      done();
+    });
+  });
+
+  it('should fail if other than expected warnings were issued', function(done){
+    execScenario('failIfUnexpectedWarningsWereIssued', false, function(error, stdout, stderr) {
+      expect(stdout).to.match(/second/);
+      expect(stdout).to.match(/Aborted due to warnings./);
+      done();
+    });
+  });
+
+  it('should fail if not all expected warnings were issued', function(done){
+    execScenario('failIfNotAllExpectedWarningsWereIssued', false, function(error, stdout, stderr) {
+      expect(stdout).to.match(/second/);
+      expect(stdout).to.match(/Aborted due to warnings./);
+      done();
+    });
+  });
+
 });
