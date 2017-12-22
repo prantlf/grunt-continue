@@ -1,11 +1,15 @@
 # grunt-continue
 
-[![Build Status](https://travis-ci.org/pghalliday/grunt-continue.png)](https://travis-ci.org/pghalliday/grunt-continue)
-[![Dependency Status](https://gemnasium.com/pghalliday/grunt-continue.png)](https://gemnasium.com/pghalliday/grunt-continue)
+[![NPM version](https://badge.fury.io/js/grunt-continue-ext.png)](http://badge.fury.io/js/grunt-continue-ext)
+[![Build Status](https://travis-ci.org/prantlf/grunt-continue.png?branch=combined)](https://travis-ci.org/pghalliday/grunt-continue)
+[![dependencies Status](https://david-dm.org/prantlf/grunt-continue/status.svg)](https://david-dm.org/prantlf/grunt-continue)
+[![devDependencies Status](https://david-dm.org/prantlf/grunt-continue/dev-status.svg)](https://david-dm.org/prantlf/grunt-continue?type=dev)
+
+[![NPM Downloads](https://nodei.co/npm/grunt-continue-ext.png?downloads=true&stars=true)](https://www.npmjs.com/package/grunt-continue-ext)
 
 A grunt plugin to force other tasks to continue after failures and check for warnings issued after them
 
-Inspired by and extended from [this](http://stackoverflow.com/a/16972894/2622241) answer by [explunit](http://stackoverflow.com/users/151212/explunit) on StackOverflow
+Inspired by and extended from [this](http://stackoverflow.com/a/16972894/2622241) answer by [explunit](http://stackoverflow.com/users/151212/explunit) on StackOverflow.
 
 ## Usage
 
@@ -206,6 +210,10 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 $ npm test
 ```
 
+## Background
+
+This project started as a fork of [grunt-continue] with the additional support for cheking of grunt warnings.
+
 ### Using Vagrant
 To use the Vagrantfile you will also need to install the following vagrant plugins
 
@@ -216,5 +224,9 @@ $ vagrant plugin install vagrant-berkshelf
 
 
 ## License
+Copyright &copy; (c) 2017 Ferdinand Prantl
 Copyright &copy; 2013 Peter Halliday  
+
 Licensed under the MIT license.
+
+[grunt-continue]: https://github.com/pghalliday/grunt-continue

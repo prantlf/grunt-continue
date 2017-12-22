@@ -1,24 +1,27 @@
 {
-  "name": "grunt-continue",
-  "description": "A grunt plugin to force other tasks to continue after failures",
-  "version": "0.1.0",
-  "homepage": "https://github.com/pghalliday/grunt-continue",
+  "name": "grunt-continue-ext",
+  "description": "A grunt plugin to force other tasks to continue after failures (extended)",
+  "version": "0.2.0",
+  "homepage": "https://github.com/prantlf/grunt-continue",
   "author": {
-    "name": "Peter Halliday",
-    "email": "pghalliday@gmail.com",
-    "url": "http://pghalliday.com/"
+    "name": "Ferdinand Prantl",
+    "email": "prantlf@gmail.com",
+    "url": "http://prantl.tk"
   },
+  "contributors": [
+    "Peter Halliday <pghalliday@gmail.com>"
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/pghalliday/grunt-continue.git"
+    "url": "git://github.com/prantlf/grunt-continue.git"
   },
   "bugs": {
-    "url": "https://github.com/pghalliday/grunt-continue/issues"
+    "url": "https://github.com/prantlf/grunt-continue/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/pghalliday/grunt-continue/blob/master/LICENSE-MIT"
+      "url": "https://github.com/prantlf/grunt-continue/blob/combined/LICENSE-MIT"
     }
   ],
   "main": "grunt.js",
@@ -33,8 +36,7 @@
       "threshold": 100
     }
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt-cli": "~0.1.8",
     "grunt": "~0.4.1",
