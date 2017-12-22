@@ -1,4 +1,4 @@
-# grunt-continue
+# grunt-continue-ext
 
 [![NPM version](https://badge.fury.io/js/grunt-continue-ext.png)](http://badge.fury.io/js/grunt-continue-ext)
 [![Build Status](https://travis-ci.org/prantlf/grunt-continue.png?branch=combined)](https://travis-ci.org/pghalliday/grunt-continue)
@@ -16,7 +16,7 @@ Inspired by and extended from [this](http://stackoverflow.com/a/16972894/2622241
 Install next to your project's Gruntfile.js with: 
 
 ```
-$ npm install grunt-continue
+$ npm install grunt-continue-ext
 ```
 
 Here is a simple example gruntfile to show how you might force grunt to continue after failing tests if you have some cleanup that you need to perform afterward
@@ -25,7 +25,7 @@ Here is a simple example gruntfile to show how you might force grunt to continue
 module.exports = function(grunt) {
 
   // Add the grunt-continue tasks
-  grunt.loadNpmTasks('grunt-continue');
+  grunt.loadNpmTasks('grunt-continue-ext');
 
   // Other tasks and configuration
   ...
@@ -62,7 +62,7 @@ To accommodate this add the following task at the end:
 module.exports = function(grunt) {
 
   // Add the grunt-continue tasks
-  grunt.loadNpmTasks('grunt-continue');
+  grunt.loadNpmTasks('grunt-continue-ext');
 
   // Other tasks and configuration
   ...
@@ -91,7 +91,7 @@ When you write unit tests for Grunt tasks, sometimes you need to test, that a fa
 module.exports = function(grunt) {
 
   // Add the grunt-continue tasks
-  grunt.loadNpmTasks('grunt-continue');
+  grunt.loadNpmTasks('grunt-continue-ext');
 
   // Other tasks and configuration
   ...
@@ -136,7 +136,7 @@ module.exports = function(grunt) {
     ...
   });
 
-  grunt.loadNpmTasks('grunt-continue');
+  grunt.loadNpmTasks('grunt-continue-ext');
   ...
 
   grunt.registerTask('default', [
@@ -174,7 +174,7 @@ module.exports = function(grunt) {
     ...
   });
 
-  grunt.loadNpmTasks('grunt-continue');
+  grunt.loadNpmTasks('grunt-continue-ext');
   ...
 
   grunt.registerTask('default', [
