@@ -1,0 +1,11 @@
+.DS_Store
+.git*
+.npmignore
+.travis.yml
+.vscode
+coverage.html
+lib-cov
+node_modules
+npm-debug.log
+test/scenarios/destinationFile/output
+test/scenarios/quietOption/output
