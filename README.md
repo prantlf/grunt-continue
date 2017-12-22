@@ -214,15 +214,6 @@ $ npm test
 
 This project started as a fork of [grunt-continue] with the additional support for cheking of grunt warnings.
 
-### Using Vagrant
-To use the Vagrantfile you will also need to install the following vagrant plugins
-
-```
-$ vagrant plugin install vagrant-omnibus
-$ vagrant plugin install vagrant-berkshelf
-```
-
-
 ## License
 Copyright &copy; (c) 2017 Ferdinand Prantl
 Copyright &copy; 2013 Peter Halliday  
