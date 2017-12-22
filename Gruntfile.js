@@ -33,11 +33,11 @@ module.exports = function(grunt) {
         },
         src: ['lib-cov/test/tasks/**/*.js']
       },
-      'html-cov': {
+      'text-cov': {
         options: {
-          reporter: 'html-cov',
+          reporter: 'mocha-text-cov',
           quiet: true,
-          captureFile: 'coverage.html'
+          captureFile: 'coverage.txt'
         },
         src: ['lib-cov/test/tasks/**/*.js']
       },

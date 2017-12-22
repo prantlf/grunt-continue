@@ -4,7 +4,7 @@ npm-debug.log
 
 # coverage stuff
 lib-cov
-coverage.html
+coverage.txt
 
 # test stuff
 test/scenarios/destinationFile/output

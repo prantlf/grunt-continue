@@ -48,7 +48,9 @@
     "grunt-contrib-clean": "~1.1.0",
     "grunt-contrib-copy": "~1.0.0",
     "grunt-mocha-test": "~0.13.3",
+    "html-file-cov": "~1.0.0",
     "mocha": "~4.0.1",
+    "mocha-text-cov": "~0.1.1",
     "semantic-release": "^11.0.2",
     "travis-cov": "~0.2.5"
   },

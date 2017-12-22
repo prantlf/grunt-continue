@@ -3,7 +3,7 @@
 .npmignore
 .travis.yml
 .vscode
-coverage.html
+coverage.txt
 lib-cov
 node_modules
 npm-debug.log
