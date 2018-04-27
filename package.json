@@ -26,11 +26,12 @@
   ],
   "main": "grunt.js",
   "engines": {
-    "node": ">= 0.10.4"
+    "node": ">= 6"
   },
   "scripts": {
     "test": "grunt",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "config": {
     "travis-cov": {
@@ -43,16 +44,17 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "~4.1.2",
-    "grunt": "~1.0.1",
+    "grunt": "~1.0.2",
     "grunt-blanket": "~0.0.10",
     "grunt-contrib-clean": "~1.1.0",
     "grunt-contrib-copy": "~1.0.0",
     "grunt-mocha-test": "~0.13.3",
     "html-file-cov": "~1.0.0",
-    "mocha": "~4.0.1",
+    "mocha": "~5.1.1",
     "mocha-text-cov": "~0.1.1",
-    "semantic-release": "^11.0.2",
-    "travis-cov": "~0.2.5"
+    "semantic-release": "^15.1.7",
+    "travis-cov": "~0.2.5",
+    "travis-deploy-once": "^4.4.1"
   },
   "keywords": [
     "gruntplugin",

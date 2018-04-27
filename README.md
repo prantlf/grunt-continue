@@ -215,7 +215,7 @@ $ npm test
 This project started as a fork of [grunt-continue] with the additional support for cheking of grunt warnings.
 
 ## License
-Copyright &copy; (c) 2017 Ferdinand Prantl
+Copyright &copy; 2017-2018 Ferdinand Prantl
 Copyright &copy; 2013 Peter Halliday  
 
 Licensed under the MIT license.
