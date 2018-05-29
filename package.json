@@ -29,6 +29,7 @@
     "node": ">= 6"
   },
   "scripts": {
+    "prepare": "nsp check",
     "test": "grunt",
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
@@ -50,11 +51,12 @@
     "grunt-contrib-copy": "~1.0.0",
     "grunt-mocha-test": "~0.13.3",
     "html-file-cov": "~1.0.0",
-    "mocha": "~5.1.1",
+    "mocha": "~5.2.0",
     "mocha-text-cov": "~0.1.1",
-    "semantic-release": "^15.1.7",
+    "nsp": "^3.2.1",
+    "semantic-release": "^15.5.0",
     "travis-cov": "~0.2.5",
-    "travis-deploy-once": "^4.4.1"
+    "travis-deploy-once": "^5.0.0"
   },
   "keywords": [
     "gruntplugin",
